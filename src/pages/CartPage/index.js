@@ -7,36 +7,38 @@ const CartPage = () =>{
     const cart = useSelector(state => state.user.cart)
     const [cartItems, setCartItems] = useState(null)
     useEffect(()=>{
-        const getCartItems =   ()=>{
-            if(cart){
+        const getCartItems = () => {
+            if (cart) {
                 const dbRef = ref(database)
-                 return  cart.products.map(async (number, index) =>  {
-                    const data2 = await get(child(dbRef, "/product/product/"+index))
-                    console.log(data2.val())
-                    const prepareData = await data2.val()
-                    return await {title:prepareData.title, price:prepareData.price, img:prepareData.img}
+                const arr = cart.products.map(async (number, index) => {
+                    const data = await get(child(dbRef, "/product/product/" + index))
+                    return data.val()
                 })
-
+                Promise.all(arr).then(result => {
+                    setCartItems(result)
+                })
             }
 
         }
-        setCartItems(getCartItems())
+        getCartItems()
     }, [cart])
-    console.log(cart)
-    return(
-        <div >
-
-            Cart:
-            {cartItems&&cartItems.map((element, index)=>{
-                console.log(element)
-                return(<div style={{display:"flex", gap:"10px", height:"60px", alignItems:"center", }}>
-                    <div>{element.title}</div>
-                    <img src={element.img} style={{height:"50px"}}/>
-                    <div>Ціна за штуку {element.price}</div>
-                    <div>Кількість товару = {cart.products[index]}</div>
-                </div>)
-            })}
-        </div>
+    return (<>{cart ?
+            <div>
+                Cart:
+                {cartItems && cartItems.map((element, index) => {
+                    return (<div style={{display: "flex", gap: "10px", height: "60px", alignItems: "center",}}>
+                        <div style={{width: "350px"}}>{element.title}</div>
+                        <img src={element.img} style={{height: "50px"}}/>
+                        <div>Ціна за штуку {element.price}</div>
+                        <div>Кількість товару = {cart.products[index]}</div>
+                    </div>)
+                })}
+                <div>Cума корзини - {cart?.totalPrice}</div>
+                <button onClick={() => console.log("тут при вдалому запиті повинна очищатися корзина " +
+                    "та обнулятися в redux")}>
+                    Купити
+                </button>
+            </div>:<div>зайдіть або зареєструйтеся</div>}</>
     )
 }
 export default CartPage

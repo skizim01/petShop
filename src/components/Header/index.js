@@ -27,7 +27,7 @@ const Header = () => {
     return (
         <header className={s.header}>
             <div className={s.rightSide}>
-                <div className={s.logo}><img src={logo} alt={'Логотип'}/></div>
+                <NavLink to={'/'} className={s.logo}><img src={logo} alt={'Логотип'}/></NavLink>
                 <div className={s.navItems}>
                     {navItems.map(item =>
                         <NavLink
@@ -40,11 +40,10 @@ const Header = () => {
             </div>
             <div className={s.interfaceContainer}>
 
-                {user && interfaceItems.map((item, index) =>
-                    <div className={s.interfaceItem} key={index}>{item.icon}
-                        {item.index&&<div className={s.interfaceCounter}>{cart}</div>}
-                    </div>
-                )}
+                {user && <NavLink  to={'/cart/'} className={s.interfaceItem} >{interfaceItems[0].icon}
+                        {<div className={s.interfaceCounter}>{cart}</div>}
+                    </NavLink>
+                }
                 {user && <div onClick={logOut}><ImExit/></div>}
                 {!user && <NavLink style={navLinkStyle} to={'/login/'} >Зайти</NavLink>}
 
