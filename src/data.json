@@ -1,0 +1,80 @@
+{
+  "product": [
+    {
+      "id": "0",
+      "type": "clothes",
+      "tags": ["Fashion", "Denim"],
+      "colors": "green",
+      "gender": "female",
+      "title": "Спортивний костюм Braska Модель 61-6044/314",
+      "description": "Жіночий спортивний костюм (61-6044/314) без підкладки. Матеріал: 95% бавовна, 5% спандекс\n",
+      "img": "https://intertop.ua/load/BU1725/412x550/MAIN.jpg\n",
+      "price": 1109
+    },
+    {
+      "id": "1",
+
+      "type": "clothes",
+      "tags": ["Fashion", "Denim"],
+      "colors": "red",
+      "gender": "female",
+      "title": "Сорочка з довгим рукавом DeFacto Модель S0420AZ-BK27",
+      "description": "Склад: 46% акрил, 15% бавовна, 22% поліестер, 14% віскоза, 3% шерсть. Зріст моделі: 178 см Параметри: 82/61/91 Розмір на моделі: S",
+      "img": "https://intertop.ua/load/DEW1838/412x550/MAIN.jpg",
+      "price": 499
+    },
+    {
+      "id": "2",
+      "type": "bag",
+      "tags": ["Fashion", "Denim"],
+      "colors": "blue",
+      "gender": "male",
+      "title": "Рюкзак Tommy Hilfiger TECH ESSENTIAL Модель AM0AM10310-RBN",
+      "description": "Особливості: • Склад: 90% поліестер, 10% поліуретан • Відділення для ноутбука • Розмір: 29, 5 х 44, 5 х 15 см",
+      "img": "https: //intertop.ua/load/TC4322/412x550/MAIN.jpg",
+      "price": 3800
+    },
+    {
+      "id": "3",
+      "type": "shoes",
+      "tags": ["Fashion", "Denim"],
+      "colors": "black",
+      "gender": "male",
+      "title": "Черевики Emporio Armani Модель X4M376-XN607-K001",
+      "description": "Черевики Emporio Armani Модель X4M376-XN607-K001",
+      "img": "https: //intertop.ua/load/5Q268/412x550/MAIN.jpg",
+      "price": 8371
+    },
+    {
+      "id": "4",
+      "type": "watch",
+      "tags": ["Fashion", "Denim"],
+      "colors": "white",
+      "gender": "male",
+      "title": "Годинник GUESS Модель GW0264G2",
+      "description": "Креативний чоловічий наручний годинник Guess GW0264G2. Оригінальний дизайн і багатофункціональність втілені в колекції NAVIGATOR. Сталевий корпус чорного кольору. Діаметр корпусу - 50 мм, товщина - 14, 25 мм. На дисплеї відображено три мініциферблата, які вказують дату, день тижня і 12/24 формат часу. Функції встановлюються за допомогою заводної головки. Силіконовий ремінець з принтом в стилі \"мілітарі\". Довжина ремінця - 197 мм. Ширина кріплення - 29 мм. Стрілки з люмінесцентними покриттям. Циферблат захищений міцним мінеральним склом. Водозахист - 5 АТМ.\n",
+      "img": "https: //intertop.ua/load/GW0264G2/412x550/MAIN.jpeg",
+      "price": 3254
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

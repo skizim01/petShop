@@ -1,0 +1,50 @@
+
+.container {
+    max-width: 1170px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 27px 40px 10px;
+
+}
+
+.container > div {
+    width: 20%;
+    color: #282c34;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.listItem {
+    font-weight: 400;
+
+    color: #aaa;
+    text-transform: none;
+    font-size: 15px;
+    line-height: 1.2;
+    padding-bottom: 6px;
+}
+
+.listItem:hover {
+    color: #717fe0;
+    text-decoration: underline #717fe0;
+}
+
+.tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+
+}
+
+.tagItem {
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 0 10px;
+    border: #888 solid 1px;
+    border-radius: 10px;
+
+}

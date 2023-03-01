@@ -1,0 +1,59 @@
+.header{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    max-width: 1170px;
+}
+
+.rightSide{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 55px ;
+}
+
+.navItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navItem{
+
+
+}
+
+.interfaceContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.interfaceItem{
+    padding: 0 11px 0 22px;
+    position: relative;
+}
+
+.interfaceCounter{
+    position: absolute;
+    top:0px;
+    font-size: 10px;
+    font-weight: 800;
+    right: 5px;
+    height: 13px;
+    width: 13px;
+    background-color: #717fe0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+

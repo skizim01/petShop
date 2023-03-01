@@ -1,0 +1,27 @@
+.container {
+    margin: 0 auto;
+
+    max-width: 1170px;
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: column;
+
+
+}
+
+.collection {
+    font-size: 28px;
+
+}
+
+
+.title {
+    font-size: 60px;
+    padding-bottom: 46px;
+    font-weight: 500;
+}
+
+
